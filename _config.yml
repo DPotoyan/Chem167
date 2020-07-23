@@ -4,7 +4,7 @@ author: The Jupyter Book Community
 logo: logo.png
 
 repository:
-  url: https://dpotoyan.github.io/Chem167
+  url: https://github.com/DPotoyan/Chem167
 html:
   use_repository_button: true
 
