@@ -1,5 +1,5 @@
 sphinx
 pandas
 matplotlib
-jupyter-book
 quantecon
+jupyter-book

@@ -1,7 +1,7 @@
 #######################################################################################
 # Book settings
-title : General Chemistry
-author: Davit A Potoyan
+title : Scientific Python QuickStart
+author: Thomas J. Sargent and John Stachurski
 logo: 'qe-logo-large.png'
 
 # Information about where the book exists on the web
@@ -25,8 +25,8 @@ notebook_interface            : "notebook"
 #######################################################################################
 # Launch button settings
 repository:
-  url                         : https://github.com/DPotoyan/Chem167
-  path_to_book                : ""
+  url                         : https://github.com/DPotoyan/Chem167/
+  path_to_book                : "mini_book"
 
 binder:
   binderhub_url               : "https://mybinder.org"

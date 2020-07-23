@@ -1,4 +1,4 @@
-name: Chem167
+name: qe-mini-example
 channels:
   - default
   - conda-forge
@@ -9,5 +9,5 @@ dependencies:
   - pandas
   - matplotlib
   - pip:
-    - jupyter-book>=0.7.0b
     - quantecon
+    - jupyter-book>=0.7.0b
