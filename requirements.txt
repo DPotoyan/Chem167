@@ -1,3 +1,4 @@
-jupyter-book
+sphinx
+pandas
 matplotlib
-numpy
+jupyter-book
