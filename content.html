@@ -2,11 +2,10 @@
 
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>quantecon-mini-example &#8212; General Chemistry</title>
+    <title>Content in Jupyter Book &#8212; My sample book</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
@@ -29,9 +28,10 @@
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.4/require.min.js"></script>
     <script src="https://unpkg.com/@jupyter-widgets/html-manager@^0.18.0/dist/embed-amd.js"></script>
-    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Welcome to your Jupyter Book" href="intro.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="docsearch:language" content="en">
@@ -50,10 +50,10 @@
         <div class="navbar-brand-box">
 <a class="navbar-brand text-wrap" href="index.html">
   
-  <img src="_static/qe-logo-large.png" class="logo" alt="logo">
+  <img src="_static/logo.png" class="logo" alt="logo">
   
   
-  <h1 class="site-logo" id="site-title">General Chemistry</h1>
+  <h1 class="site-logo" id="site-title">My sample book</h1>
   
 </a>
 </div>
@@ -66,23 +66,25 @@
 <nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
   <ul class="nav sidenav_l1">
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/about_py.html">
-   About Python
+  <a class="reference internal" href="#">
+   Content in Jupyter Book
+  </a>
+ </li>
+</ul>
+<ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="intro.html">
+   Welcome to your Jupyter Book
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/getting_started.html">
-   Setting up Your Python Environment
+  <a class="reference internal" href="markdown.html">
+   Markdown Files
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="docs/python_by_example.html">
-   An Introductory Example
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="docs/learn_more.html">
-   Learn More
+  <a class="reference internal" href="notebooks.html">
+   Content with notebooks
   </a>
  </li>
 </ul>
@@ -90,6 +92,10 @@
 </nav>
 
  <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
 
 </div>
 
@@ -123,7 +129,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/README.md"><button type="button"
+        <a class="dropdown-buttons" href="_sources/content.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -150,29 +156,7 @@
             <i class="fas fa-list"></i> On this page
         </div>
         <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#creating-an-conda-environment">
-   Creating an Conda Environment
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#building-a-jupyter-book">
-   Building a Jupyter Book
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#publishing-this-jupyter-book">
-   Publishing this Jupyter Book
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#notes">
-   Notes
-  </a>
- </li>
-</ul>
-
+            
         </nav>
     </div>
 </div>
@@ -181,41 +165,11 @@
         
               <div>
                 
-  <div class="section" id="quantecon-mini-example">
-<h1>quantecon-mini-example<a class="headerlink" href="#quantecon-mini-example" title="Permalink to this headline">¶</a></h1>
-<p>A short example showing how to write a lecture series using Jupyter Book 2.0.</p>
-<div class="section" id="creating-an-conda-environment">
-<h2>Creating an Conda Environment<a class="headerlink" href="#creating-an-conda-environment" title="Permalink to this headline">¶</a></h2>
-<p>The conda environment is provided as <code class="docutils literal notranslate"><span class="pre">environment.yml</span></code>. This environment is used for all testing by Github Actions and can be setup by:</p>
-<ol class="simple">
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">env</span> <span class="pre">create</span> <span class="pre">-f</span> <span class="pre">environment.yml</span></code></p></li>
-<li><p><code class="docutils literal notranslate"><span class="pre">conda</span> <span class="pre">activate</span> <span class="pre">qe-mini-example</span></code></p></li>
-</ol>
-</div>
-<div class="section" id="building-a-jupyter-book">
-<h2>Building a Jupyter Book<a class="headerlink" href="#building-a-jupyter-book" title="Permalink to this headline">¶</a></h2>
-<p>Run the following command in your terminal:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb build mini_book/
-</pre></div>
-</div>
-<p>If you would like to work with a clean build, you can empty the build folder by running:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb clean mini_book/
-</pre></div>
-</div>
-<p>If jupyter execution is cached, this command will not delete the cached folder.</p>
-<p>To remove the build folder (including <code class="docutils literal notranslate"><span class="pre">cached</span></code> executables), you can run:</p>
-<div class="highlight-bash notranslate"><div class="highlight"><pre><span></span>jb clean --all mini_book/
-</pre></div>
-</div>
-</div>
-<div class="section" id="publishing-this-jupyter-book">
-<h2>Publishing this Jupyter Book<a class="headerlink" href="#publishing-this-jupyter-book" title="Permalink to this headline">¶</a></h2>
-<p>This repository is published automatically to <code class="docutils literal notranslate"><span class="pre">gh-pages</span></code> upon <code class="docutils literal notranslate"><span class="pre">push</span></code> to the <code class="docutils literal notranslate"><span class="pre">master</span></code> branch.</p>
-</div>
-<div class="section" id="notes">
-<h2>Notes<a class="headerlink" href="#notes" title="Permalink to this headline">¶</a></h2>
-<p>This repository is used as a test case for <a class="reference external" href="https://github.com/executablebooks/jupyter-book">jupyter-book</a> and
-a <code class="docutils literal notranslate"><span class="pre">requirements.txt</span></code> file is provided to support this <code class="docutils literal notranslate"><span class="pre">CI</span></code> application.</p>
+  <div class="section" id="content-in-jupyter-book">
+<h1>Content in Jupyter Book<a class="headerlink" href="#content-in-jupyter-book" title="Permalink to this headline">¶</a></h1>
+<p>There are many ways to write content in Jupyter Book. This short section
+covers a few tips for how to do so.</p>
+<div class="toctree-wrapper compound">
 </div>
 </div>
 
@@ -228,13 +182,14 @@ a <code class="docutils literal notranslate"><span class="pre">requirements.txt<
     
     <div class='prev-next-bottom'>
         
+    <a class='right-next' id="next-link" href="intro.html" title="next page">Welcome to your Jupyter Book</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
         
-          By Davit A Potoyan<br/>
+          By The Jupyter Book Community<br/>
         
             &copy; Copyright 2020.<br/>
       </p>
