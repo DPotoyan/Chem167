@@ -5,7 +5,7 @@ logo: logo.png
 
 # Information about where the book exists on the web
 repository:
-  url                       : https://github.com/yourusername/yourbookrepo
+  url                       : https://github.com/DPotoyan/Chem167
 
 # Configure your Binder links, such as the URL of the BinderHub.
 launch_buttons:
