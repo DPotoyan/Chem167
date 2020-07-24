@@ -1,4 +1,7 @@
-Content in Jupyter Book
+# General Chemistry, Chem167 Fall 2020
+### Department of Chemistry, Iowa State University, Ames IA 50011
 =======================
 
-## Testing content
+## About this course
+
+## About the content of website
