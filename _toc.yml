@@ -1,5 +1,4 @@
 file: content
 sections:
-- file: intro
-- file: markdown
-- file: notebooks
+- file: ch01_intro
+- file: ch02_atoms_molecules
